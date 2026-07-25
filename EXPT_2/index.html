@@ -1,0 +1,340 @@
+<!doctype html>
+<html>
+  <head>
+    <title>DriveLux Car Rentals</title>
+    <style>
+      body {
+        background-color: #eeeeee;
+        font-family: Arial;
+        margin: 0;
+        color: #222;
+      }
+      .header {
+        background-color: white;
+        padding: 25px;
+        text-align: center;
+      }
+      .header h1 {
+        margin: 0;
+        color: #111;
+      }
+      .header p {
+        margin-bottom: 0;
+        color: gray;
+      }
+      .nav {
+        background-color: #000000da;
+        text-align: center;
+        padding: 15px;
+      }
+      .nav a {
+        color: white;
+        text-decoration: none;
+        margin: 25px;
+        font-weight: bold;
+      }
+      .container {
+        width: 86%;
+        margin: auto;
+      }
+      .section {
+        background-color: white;
+        margin-top: 20px;
+        padding: 25px;
+      }
+      h2 {
+        color: #000000da;
+      }
+      .hero {
+        background-color: #111;
+        color: white;
+        margin-top: 20px;
+        padding: 25px;
+      }
+      .hero h2 {
+        color: white;
+        font-size: 30px;
+      }
+      .hero p {
+        color: lightgray;
+      }
+      .car-image {
+        width: 100%;
+        height: 500px;
+        margin-top: 15px;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+      .half {
+        width: 47%;
+        background-color: white;
+        padding: 20px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid lightgray;
+      }
+      th {
+        background-color: #111;
+        color: white;
+      }
+      th,
+      td {
+        padding: 12px;
+        text-align: center;
+      }
+      fieldset {
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid lightgray;
+      }
+      legend {
+        font-weight: bold;
+        color: #111;
+      }
+      label {
+        font-weight: bold;
+      }
+      input,
+      select,
+      textarea {
+        padding: 9px;
+        margin-top: 6px;
+        margin-bottom: 15px;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="date"],
+      input[type="number"],
+      select,
+      textarea {
+        width: 95%;
+      }
+      .button {
+        background-color: #111;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        margin: 5px;
+      }
+      progress {
+        width: 100%;
+        height: 25px;
+      }
+      video {
+        width: 100%;
+      }
+      audio {
+        width: 100%;
+      }
+      embed {
+        width: 100%;
+        height: 500px;
+      }
+      iframe {
+        width: 100%;
+        height: 350px;
+      }
+      .footer {
+        background-color: #111;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>DriveLux</h1>
+      <p>Premium Car Rental Service</p>
+    </div>
+    <div class="nav">
+      <a href="#cars">Cars</a>
+      <a href="#booking">Book a Car</a>
+      <a href="#media">Media</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="container">
+      <div class="hero" id="cars">
+        <h2>Quick and Affordable Car Rentals</h2>
+        <p>
+          Comfortable cars for business trips, family vacations and everyday
+          journeys.
+        </p>
+        <img src="car.jpg" alt="Rental Car" class="car-image" />
+      </div>
+      <div class="section">
+        <h2>Our Rental Car Collection</h2>
+        <p>
+          Choose the right vehicle for your next journey. We provide comfortable
+          and well-maintained rental cars.
+        </p>
+        <table>
+          <tr>
+            <th>Car</th>
+            <th>Type</th>
+            <th>Seats</th>
+            <th>Price / Day</th>
+          </tr>
+          <tr>
+            <td>Honda City</td>
+            <td>Sedan</td>
+            <td>5</td>
+            <td>₹1800</td>
+          </tr>
+          <tr>
+            <td>Hyundai Creta</td>
+            <td>SUV</td>
+            <td>5</td>
+            <td>₹2500</td>
+          </tr>
+          <tr>
+            <td>Mahindra XUV700</td>
+            <td>SUV</td>
+            <td>7</td>
+            <td>₹3000</td>
+          </tr>
+        </table>
+    </div>
+      <div class="section" id="booking">
+        <h2>Rent Your Car</h2>
+        <p>Complete the form below to enter your rental details.</p>
+        <form>
+          <fieldset>
+            <legend>Customer Information</legend>
+            <label>Full Name:</label>
+            <br />
+            <input type="text" name="name" placeholder="Enter your name" />
+            <br />
+            <label>Email:</label>
+            <br />
+            <input type="email" name="email" placeholder="Enter your email" />
+            <br />
+            <label>Phone Number:</label>
+            <br />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Enter your phone number"
+            />
+            <br />
+            <label>Address:</label>
+            <br />
+            <textarea
+              rows="4"
+              cols="50"
+              placeholder="Enter your address"
+            ></textarea>
+          </fieldset>
+          <fieldset>
+            <legend>Rental Information</legend>
+            <label>Select Car:</label>
+            <br />
+            <select name="car">
+              <option>Honda City</option>
+              <option>Hyundai Creta</option>
+              <option>Mahindra XUV700</option>
+            </select>
+            <br />
+            <label>Pickup Date:</label>
+            <br />
+            <input type="date" name="pickup" />
+            <br />
+            <label>Number of Days:</label>
+            <br />
+            <input type="number" name="days" min="1" />
+            <br />
+            <label>Transmission:</label>
+            <br /><br />
+            <input type="radio" name="transmission" value="manual" />
+            Manual
+            <input type="radio" name="transmission" value="automatic" />
+            Automatic
+            <br /><br />
+            <label>Extra Services:</label>
+            <br /><br />
+            <input type="checkbox" name="driver" />
+            Driver Service
+            <br />
+            <input type="checkbox" name="airport" />
+            Airport Pickup
+            <br />
+            <input type="checkbox" name="gps" />
+            GPS Navigation
+            <br />
+            <input type="checkbox" name="childseat" />
+            Child Seat
+            <br /><br />
+        </fieldset>
+          <fieldset>
+            <legend>Booking Progress</legend>
+            <label> Booking Details Completed: </label>
+            <br /><br />
+            <progress value="70" max="100"></progress>
+            <p>70% Complete</p>
+          </fieldset>
+          <input type="submit" value="Book Now" class="button" />
+          <input type="reset" value="Clear Form" class="button" />
+        </form>
+      </div>
+      <div class="row" id="media">
+        <div class="half">
+          <h2>Experience Our Cars</h2>
+          <p>Watch a short video of our rental cars.</p>
+          <video controls>
+            <source src="car-video.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="half">
+          <h2>About DriveLux</h2>
+          <p>Listen to a short introduction about our car rental service.</p>
+          <audio controls>
+            <source src="car-audio.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+      </div>
+      <div class="row">
+        <div class="half">
+          <h2>Rental Information</h2>
+          <p>View our complete car rental information document.</p>
+          <embed src="car-info.pdf" type="application/pdf" />
+        </div>
+        <div class="half">
+          <h2>Our Location</h2>
+          <p>Find DriveLux Car Rentals in Coimbatore.</p>
+          <iframe src="https://www.google.com/maps?q=Coimbatore&output=embed">
+          </iframe>
+        </div>
+      </div>
+      <div class="section" id="contact">
+        <h2>Contact DriveLux</h2>
+        <p>
+          <b>Email:</b>
+          carrental@gmail.com
+        </p>
+        <p>
+          <b>Phone:</b>
+          +91 9876543210
+        </p>
+        <p>
+          <b>Location:</b>
+          Coimbatore, Tamil Nadu
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>DriveLux Car Rentals | Web Technology Lab</p>
+    </div>
+  </body>
+</html>
