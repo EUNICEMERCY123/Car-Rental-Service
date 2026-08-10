@@ -1,0 +1,225 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background-color: #f5f5f5;
+  color: #222;
+}
+.header {
+  background-color: white;
+  padding: 22px 8%;
+  border-bottom: 1px solid #ddd;
+}
+.header h1 {
+  margin: 0;
+  color: #111;
+  font-size: 28px;
+}
+.header p {
+  margin: 5px 0 0;
+  color: #777;
+}
+.nav {
+  background-color: #111;
+  text-align: right;
+  padding: 14px 8%;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 14px;
+}
+.nav a:hover {
+  color: #d4a017;
+}
+.hero {
+  width: 84%;
+  margin: 25px auto;
+  background-color: white;
+  padding: 30px;
+  overflow: hidden;
+}
+.hero-text {
+  width: 43%;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 20px;
+}
+.small-title {
+  color: #b8860b;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.hero-text h2 {
+  font-size: 42px;
+  line-height: 1.2;
+  color: #111;
+  margin: 15px 0;
+}
+.hero-text p {
+  color: #666;
+  line-height: 24px;
+}
+.hero-image {
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.hero-image img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+}
+.button {
+  display: inline-block;
+  background-color: #111;
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  margin-top: 15px;
+}
+.button:hover {
+  background-color: #d4a017;
+  color: black;
+}
+.about {
+  background-color: white;
+  text-align: center;
+  padding: 45px 15%;
+  margin-top: 20px;
+}
+.about h2 {
+  color: #111;
+}
+.about p {
+  color: #666;
+  line-height: 25px;
+}
+.section {
+  width: 84%;
+  margin: 25px auto;
+  background-color: white;
+  padding: 35px;
+  text-align: center;
+}
+.section h2 {
+  color: #111;
+  font-size: 27px;
+  margin-top: 0;
+}
+.section-text {
+  color: #777;
+  margin-bottom: 30px;
+}
+.service-box {
+  display: inline-block;
+  width: 20%;
+  min-height: 130px;
+  margin: 1%;
+  padding: 20px;
+  background-color: #f7f7f7;
+  vertical-align: top;
+}
+.service-box h3 {
+  color: #111;
+}
+.service-box p {
+  color: #666;
+  line-height: 22px;
+}
+.car-box {
+  display: inline-block;
+  width: 28%;
+  margin: 1%;
+  padding: 15px;
+  background-color: #f8f8f8;
+  vertical-align: top;
+}
+.car-box img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+.car-box h3 {
+  color: #111;
+  margin-bottom: 8px;
+}
+.car-box p {
+  color: #777;
+}
+.price {
+  color: #b8860b !important;
+  font-weight: bold;
+  font-size: 17px;
+}
+.small-button {
+  display: inline-block;
+  background-color: #111;
+  color: white;
+  text-decoration: none;
+  padding: 9px 18px;
+  margin-top: 5px;
+}
+.small-button:hover {
+  background-color: #d4a017;
+  color: black;
+}
+.step-box {
+  display: inline-block;
+  width: 27%;
+  margin: 1%;
+  padding: 20px;
+  vertical-align: top;
+}
+.step-box h3 {
+  color: #b8860b;
+  font-size: 28px;
+}
+.step-box h4 {
+  color: #111;
+}
+.step-box p {
+  color: #777;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+th {
+  background-color: #111;
+  color: white;
+  padding: 13px;
+}
+td {
+  padding: 13px;
+  color: #555;
+}
+.contact {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 45px;
+  margin-top: 25px;
+}
+.contact h2 {
+  color: white;
+  font-size: 28px;
+}
+.contact p {
+  color: #ccc;
+}
+.footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.footer p {
+  margin: 0;
+}
