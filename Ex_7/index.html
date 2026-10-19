@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveLux Car Customizer</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Drive<span>Lux</span></h1>
+    <p>Make Your Drive Your Own</p>
+</header>
+
+<section class="main">
+    <div class="intro">
+        <p class="tag">PERSONALISE YOUR RIDE</p>
+        <h2>Build Your <span>Dream Car</span></h2>
+        <p>Choose your favourite colour, glass tint and tyre size.</p>
+    </div>
+
+    <div class="customizer">
+
+        <div class="preview">
+            <h3>Your Car Preview</h3>
+
+            <div class="car-scene">
+                <div class="car">
+                    <div class="roof"></div>
+                    <div class="window front-window"></div>
+                    <div class="window back-window"></div>
+                    <div class="body"></div>
+                    <div class="wheel wheel-one"></div>
+                    <div class="wheel wheel-two"></div>
+                </div>
+            </div>
+
+            <p id="message">Your car is ready to customise!</p>
+        </div>
+
+        <div class="controls">
+            <h3>Customise Your Car</h3>
+
+            <label for="colour">Car Body Colour</label>
+            <input type="color" id="colour" value="#d9a441">
+
+            <label for="tint">Glass Tint</label>
+            <select id="tint">
+                <option value="#b9e7f5">Light Tint</option>
+                <option value="#555555">Medium Tint</option>
+                <option value="#111111">Dark Tint</option>
+            </select>
+
+            <label for="tyre">Tyre Size</label>
+            <input type="range" id="tyre" min="25" max="45" value="32">
+            <p>Size: <span id="size">32</span> px</p>
+
+            <button id="apply">Apply Changes</button>
+            <button id="reset">Reset Car</button>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <h2>DriveLux</h2>
+    <p>Drive in your own style.</p>
+    <p>© 2026 DriveLux Car Rental | Web Technology Lab</p>
+</footer>
+
+<script>
+$(document).ready(function() {
+
+    $("#apply").click(function() {
+        $(".body").css("background-color", $("#colour").val());
+
+        $(".window").css("background-color", $("#tint").val());
+
+        let tyreSize = $("#tyre").val();
+
+        $(".wheel").css({
+            "width": tyreSize + "px",
+            "height": tyreSize + "px"
+        });
+
+        $("#size").text(tyreSize);
+        $("#message").text("Your car has been customised!");
+    });
+
+    $("#tyre").on("input", function() {
+        $("#size").text($(this).val());
+    });
+
+    $("#reset").click(function() {
+        $("#colour").val("#d9a441");
+        $("#tint").val("#b9e7f5");
+        $("#tyre").val(32);
+
+        $(".body").css("background-color", "#d9a441");
+        $(".window").css("background-color", "#b9e7f5");
+        $(".wheel").css({
+            "width": "32px",
+            "height": "32px"
+        });
+
+        $("#size").text("32");
+        $("#message").text("Your car settings have been reset.");
+    });
+
+});
+</script>
+
+</body>
+</html>
