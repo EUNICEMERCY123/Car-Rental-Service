@@ -1,0 +1,218 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f2;
+    color: #222;
+}
+
+header {
+    background: #111;
+    color: white;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+header span, .hero span {
+    color: #d9a441;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+}
+
+nav a:hover {
+    color: #d9a441;
+}
+
+.hero {
+    background: #191919;
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.small {
+    color: #d9a441;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero > p:not(.small) {
+    color: #ccc;
+    margin-bottom: 25px;
+}
+
+.button {
+    display: inline-block;
+    background: #d9a441;
+    color: #111;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.hero h3 {
+    margin-top: 22px;
+}
+
+.cars-section {
+    width: 85%;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.cars-section > h2,
+.animation-section > h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.car-card {
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px #ddd;
+    transition: 0.3s;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+}
+
+.car-image {
+    width: 45%;
+    height: 230px;
+    object-fit: contain;
+}
+
+.car-info {
+    flex: 1;
+}
+
+.car-info h3 {
+    margin: 12px 0;
+}
+
+.car-info > p:not(.small) {
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+button {
+    background: #171717;
+    color: white;
+    border: none;
+    padding: 11px 14px;
+    margin: 5px 3px 0 0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #d9a441;
+    color: #111;
+}
+
+.animation-section {
+    background: white;
+    width: 85%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px #ddd;
+}
+
+.animation-section p {
+    margin-bottom: 20px;
+}
+
+#road {
+    height: 130px;
+    background: #e4e4e4;
+    border-bottom: 6px dashed #555;
+    position: relative;
+    overflow: hidden;
+}
+
+#movingCar {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 100px;
+    height: 85px;
+    object-fit: contain;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+footer h2 {
+    color: #d9a441;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 7px;
+    color: #bbb;
+}
+
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .car-card {
+        flex-direction: column;
+    }
+
+    .car-image {
+        width: 100%;
+        height: 200px;
+    }
+
+    .cars-section,
+    .animation-section {
+        width: 92%;
+    }
+}
