@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f3ef;
+    color: #222;
+}
+
+header {
+    background: #111;
+    color: white;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+header span, .home span {
+    color: #d9a441;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d9a441;
+}
+
+main {
+    min-height: 70vh;
+    padding: 35px 16px;
+}
+
+.home {
+    max-width: 850px;
+    margin: 70px auto;
+    padding: 65px 25px;
+    text-align: center;
+    background: #171717;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px #ccc;
+}
+
+.home h2 {
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.home p {
+    color: #ccc;
+    line-height: 1.7;
+}
+
+.tag {
+    color: #d9a441 !important;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 13px 25px;
+    background: #d9a441;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.button:hover {
+    background: white;
+}
+
+.card {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 5px 22px #ddd;
+}
+
+.card h2 {
+    text-align: center;
+    color: #b4862d;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+}
+
+label {
+    display: block;
+    margin: 15px 0 7px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input:focus, select:focus {
+    outline: 2px solid #d9a441;
+}
+
+small {
+    display: block;
+    color: red;
+    margin-top: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 22px;
+    border: none;
+    border-radius: 6px;
+    background: #111;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #d9a441;
+    color: #111;
+}
+
+button:disabled {
+    background: #999;
+    cursor: not-allowed;
+}
+
+.success {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer h2 {
+    color: #d9a441;
+}
+
+footer p {
+    color: #bbb;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .home h2 {
+        font-size: 30px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}
